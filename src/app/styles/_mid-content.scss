@@ -4,29 +4,9 @@
     background: hsl(0, 0%, 95%);
     ul {
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
-    }
-}
-@media(max-width: 750px) {
-    .mid-content {
-        ul {
-            grid-template-columns: 1fr;
-        }
-    }
-}
-@media(max-width: 900px) {
-    .bottom-content {
-        ul {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-}
-@media(max-width: 500px) {
-    .bottom-content {
-        ul {
-            grid-template-columns: 1fr;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 }

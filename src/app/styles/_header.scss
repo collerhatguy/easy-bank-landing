@@ -1,19 +1,21 @@
 
 header {
-    background-color: white;
+    @include center-flex-row();
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1rem;
-    @include cneter-flex-row();
+    height: $headerHeight;
+    background-color: white;
+    padding: 0 1rem;
     z-index: 3;
     nav {
         width: 50%;
-        @include cneter-flex-row();
+        @include center-flex-row();
         a {
             text-decoration: none;
             color: hsl(233, 8%, 62%);
             padding: 3px 0;
+            font-weight: 300;
         }
     }
 }

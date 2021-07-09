@@ -4,7 +4,7 @@
 // 4. mid-content
 
 // 1. mixins
-@mixin cneter-flex-row {
+@mixin center-flex-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,6 +14,7 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+$headerHeight: 100px;
 
 // 2. header
 @import "./styles/header";

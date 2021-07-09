@@ -1,55 +1,65 @@
 main {
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .top-content {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color: hsl(0, 0%, 98%);
+    .text-container {
+        padding-right: 1rem;
+    }
 }
 .text-container {
-    width: 70%;
-    padding: 3rem;
+    width: 50%;
+    min-width: min-content;
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    h2, p {
+    h2,h3, p {
         margin: 1rem 0;
     }
-    h2 {
+    h2, h3 {
         color: hsl(233, 26%, 24%);
         font-size: 4rem;
         padding: 1rem 0;
+    }
+    h2 {
+        font-weight: 700;
+    }
+    h3 {
+        font-weight: 400;
     }
     p {
         font-size: 1rem;
         color: hsl(233, 8%, 62%);
         line-height: 1.5;
+        font-weight: 400;
     }
 }
-#bg-intro-desktop {
-    @include image();
-    background-image: url(../../assets/bg-intro-desktop.svg);
-    width: 50%;
+.background-container {
+    width: 60%;
     height: 100%;
-    position: absolute;
     top: 0;
     right: -15%;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2;
 }
-#phone-images {
-    @include image();
-    background-image: url(../../assets/image-mockups.png);
+#bg-intro-desktop, #phone-images {
     width: 100%;
     height: 100%;
+    position: absolute;
 }
 @media(max-width: 750px) {
     main {
-        margin-top: -90px;
+        margin-top: $headerHeight;
     }
     .top-content {
         flex-direction: column-reverse;
@@ -59,13 +69,9 @@ main {
         align-items: center;
         text-align: center;
     }
-    #bg-intro-desktop {
-        background-size: cover;
+    .background-container {
         position: inherit;
         width: 100%;
-        height: 700px;
-        #phone-images {
-            background-size: cover;
-        }
+        height: 500px;
     }
 }
