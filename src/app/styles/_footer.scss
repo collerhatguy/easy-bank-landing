@@ -1,7 +1,7 @@
 
 footer {
     width: 100%;
-    padding: 2rem;
+    padding: 3rem 3rem 1rem;
     background-color: hsl(233, 26%, 24%);
     color: white;
     display: flex;
@@ -11,6 +11,8 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         a {
             color: white;
+            text-decoration: none;
+            font-weight: 400;
         }
     }
 }
@@ -33,6 +35,8 @@ aside {
     align-items: center;
     span {
         padding: 1rem 0;
+        color: hsl(233, 8%, 62%);
+        font-weight: 300;
     }
 }
 
