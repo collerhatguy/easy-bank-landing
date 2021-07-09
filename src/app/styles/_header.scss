@@ -49,10 +49,11 @@ nav {
             background-image: url(../../assets/icon-close.svg);
             & + nav {
                 display: flex;
+                box-shadow: 0px 0px 100px black;
             }
         } 
     }
-    app-pill-button {
+    header app-pill-button {
         display: none;
     }
 }

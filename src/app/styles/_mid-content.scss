@@ -1,0 +1,16 @@
+.mid-content {
+    padding: 1rem;
+    background: hsl(0, 0%, 95%);
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+}
+@media(max-width: 750px) {
+    .mid-content {
+        ul {
+            grid-template-columns: 1fr;
+        }
+    }
+}

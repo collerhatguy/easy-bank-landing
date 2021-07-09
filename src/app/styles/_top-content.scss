@@ -52,11 +52,12 @@ main {
     }
     .top-content {
         flex-direction: column-reverse;
-        .text-container {
-            width: 100%;
-            align-items: center;
-            text-align: center;
-        }
+        
+    }
+    .text-container {
+        width: 100%;
+        align-items: center;
+        text-align: center;
     }
     #bg-intro-desktop {
         background-size: cover;

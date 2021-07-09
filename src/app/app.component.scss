@@ -1,6 +1,7 @@
 // 1. mixins
 // 2. header
-// 3. section 1
+// 3. top-content
+// 4. mid-content
 
 // 1. mixins
 @mixin cneter-flex-row {
@@ -17,5 +18,8 @@
 // 2. header
 @import "./styles/header";
 
-// 3. section 1
-@import "./styles/section1";
+// 3. top-content
+@import "./styles/top-content";
+
+// 4. mid-content
+@import "./styles/mid-content";

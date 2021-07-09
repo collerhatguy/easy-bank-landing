@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import Feature from './data/Feature';
+import features from "./data/feature-data";
 
 @Component({
   selector: 'body',
@@ -14,4 +16,5 @@ export class AppComponent {
     "Blog",
     "Careers"
   ]
+  features: Feature[] = features;
 }
