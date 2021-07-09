@@ -18,6 +18,21 @@ export class AppComponent {
     "Blog",
     "Careers"
   ]
+  footerLinks: string[] = [
+    "About Us",
+    "Contact",
+    "Blog",
+    "Careers",
+    "Support",
+    "Privacy Policy"
+  ]
+  images: string[] = [
+    "assets/icon-facebook.svg",
+    "assets/icon-youtube.svg",
+    "assets/icon-twitter.svg",
+    "assets/icon-pinterest.svg",
+    "assets/icon-instagram.svg",
+  ]
   features: Feature[] = features;
   articles: Article[] = articles;
 }

@@ -6,6 +6,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: whitesmoke;
 }
 .text-container {
     width: 70%;
@@ -52,7 +53,6 @@ main {
     }
     .top-content {
         flex-direction: column-reverse;
-        
     }
     .text-container {
         width: 100%;
