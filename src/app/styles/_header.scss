@@ -1,0 +1,58 @@
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    @include cneter-flex-row();
+    z-index: 3;
+}
+nav {
+    width: 50%;
+    @include cneter-flex-row();
+    a {
+        text-decoration: none;
+        color: hsl(233, 8%, 62%);
+        padding: 3px 0;
+    }
+}
+#hamburger {
+    @include image();
+    cursor: pointer;
+    outline: none;
+    display: none;
+    padding: 1rem;
+    width: 0;
+    height: 0;
+    background-image: url(../../assets/icon-hamburger.svg)
+}
+@media(max-width: 600px) {
+    nav {
+        display: none;
+        position: fixed;
+        top: 100px;
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 5px;
+        a {
+            padding: 1rem;
+            color: hsl(233, 26%, 24%);
+            font-size: 2rem;
+        }
+    }
+    #hamburger {
+        display: block;
+        &:focus {
+            background-image: url(../../assets/icon-close.svg);
+            & + nav {
+                display: flex;
+            }
+        } 
+    }
+    app-pill-button {
+        display: none;
+    }
+}
