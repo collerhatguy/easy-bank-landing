@@ -1,0 +1,57 @@
+@mixin cneter-flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin image {    
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    @include cneter-flex-row();
+}
+nav {
+    width: 50%;
+    @include cneter-flex-row();
+    a {
+        text-decoration: none;
+        color: hsl(233, 8%, 62%);
+    }
+}
+main {
+    margin-top: 100px;
+}
+.top-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text-container {
+    width: 50%;
+}
+#bg-intro-desktop {
+    @include image();
+    background-image: url(../assets/bg-intro-desktop.svg);
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    right: -15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+#phone-images {
+    @include image();
+    background-image: url(../assets/image-mockups.png);
+    width: 100%;
+    height: 100%;
+}

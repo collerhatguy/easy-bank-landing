@@ -1,0 +1,14 @@
+.btn {
+    cursor: pointer;
+    padding: .5rem 2rem;
+    background: linear-gradient(
+        -80deg,
+    hsl(136, 65%, 51%), 
+    hsl(192, 70%, 51%));
+    border-radius: 9000px;
+    color: white;
+    transition: 300ms;
+    &:hover {
+        opacity: .7;
+    }
+}
