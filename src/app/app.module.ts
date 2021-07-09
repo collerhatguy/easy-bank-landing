@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { PillButtonComponent } from './components/pill-button/pill-button.component';
 import { FeatureCardComponent } from './components/feature-card/feature-card.component';
+import { ArticleCardComponent } from './components/article-card/article-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LogoComponent,
     PillButtonComponent,
-    FeatureCardComponent
+    FeatureCardComponent,
+    ArticleCardComponent
   ],
   imports: [
     BrowserModule

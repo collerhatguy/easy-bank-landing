@@ -37,4 +37,15 @@
       ></app-feature-card>
     </ul>
   </section>
+  <section class="bottom-content">
+    <div class="text-container">
+      <h2>Latest Articles</h2>
+    </div>
+    <ul>
+      <app-article-card
+      *ngFor="let article of articles"
+      [article]="article"
+      ></app-article-card>
+    </ul>
+  </section>
 </main>

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import Feature from './data/Feature';
 import features from "./data/feature-data";
+import Article from './data/Article';
+import articles from "./data/article-data";
 
 @Component({
   selector: 'body',
@@ -17,4 +19,5 @@ export class AppComponent {
     "Careers"
   ]
   features: Feature[] = features;
+  articles: Article[] = articles;
 }
